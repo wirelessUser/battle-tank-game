@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankController : MonoBehaviour
+public class TankController 
 {
-    // Start is called before the first frame update
+    public TankModel tankmodelRef;
+    public TankView tankViewRef;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+       public TankController(TankView _tankView,TankModel _tankModel)
     {
-        
+        tankmodelRef = _tankModel;
+        tankViewRef = _tankView;
+        tankmodelRef.SetTankConroller(this);
+        tankViewRef.SetTankConroller(this);
+
+        GameObject.Instantiate(tankViewRef);
     }
 }
