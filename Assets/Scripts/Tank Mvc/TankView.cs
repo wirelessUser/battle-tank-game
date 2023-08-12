@@ -24,7 +24,7 @@ public class TankView : MonoBehaviour
     {
         TankMovement();
         Debug.Log($" From TankView--- Movement :{ movement} ");
-        tankControllerRef.Move(movement, 30);
+        tankControllerRef.Move(movement, tankControllerRef.tankmodelRef.movementSpeed);
         tankControllerRef.Rotate(rotation, 40);
     }
 
