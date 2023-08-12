@@ -14,14 +14,20 @@ public class TankView : MonoBehaviour
 
     public void Start()
     {
-        TankMovement();
+       
+       
 
 
-        if (movement != 0)
-        {
-            tankControllerRef.Move(movement, 50);
-        }
+        
     }
+    public void Update()
+    {
+        TankMovement();
+        Debug.Log($" From TankView--- Movement :{ movement} ");
+        tankControllerRef.Move(movement, 30);
+        tankControllerRef.Rotate(rotation, 40);
+    }
+
 
 
     public Rigidbody GetRigidBody()
@@ -30,8 +36,8 @@ public class TankView : MonoBehaviour
     }
     private void  TankMovement()
     {
-        movement = Input.GetAxis("Vertical");
-        rotation = Input.GetAxis("Horizontal");
+        movement = Input.GetAxis("Vertical1");
+        rotation = Input.GetAxis("Horizontal1");
     }
     public void SetTankConroller(TankController _tankController)
     {
