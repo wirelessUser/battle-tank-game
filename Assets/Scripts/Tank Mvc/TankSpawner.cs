@@ -7,12 +7,14 @@ public class TankSpawner : MonoBehaviour
     public TankView tankPrefab;
     void Start()
     {
-        
+        TankCreator();
     }
 
    private void TankCreator()
     {
         TankModel tankModel= new TankModel();
-        TankController tankCon = new TankController(tankModel, tankPrefab);
+        TankController tankController = new TankController( tankPrefab, tankModel);
+
+
     }
 }
