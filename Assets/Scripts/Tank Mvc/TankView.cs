@@ -12,11 +12,13 @@ public class TankView : MonoBehaviour
 
     public Rigidbody tankrb;
 
-    public void Start()
+    public GameObject mainCam;
+    public void Awake()
     {
-       
-       
 
+        mainCam = GameObject.Find("Main Camera");
+        mainCam.transform.SetParent(this.gameObject.transform);
+        mainCam.transform.localPosition = new Vector3(0, 4.16f, -3.4f);
 
         
     }
