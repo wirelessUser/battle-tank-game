@@ -125,6 +125,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!54 &444113548 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: -2430727540742116032, guid: 51f9a467a8e2851468c029fda6a90fa5,
+    type: 3}
+  m_PrefabInstance: {fileID: 925904955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915728549
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,6 +188,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170878431976510762, guid: 51f9a467a8e2851468c029fda6a90fa5,
+        type: 3}
+      propertyPath: tankrb
+      value: 
+      objectReference: {fileID: 444113548}
+    - target: {fileID: 5170878431976510762, guid: 51f9a467a8e2851468c029fda6a90fa5,
+        type: 3}
+      propertyPath: movement
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5170878431976608312, guid: 51f9a467a8e2851468c029fda6a90fa5,
         type: 3}
