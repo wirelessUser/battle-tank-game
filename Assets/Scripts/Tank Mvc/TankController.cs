@@ -34,6 +34,11 @@ public class TankController
       //  tankRb.AddForce(new Vector3(0, 0, movementSpeed*movement));
     }
 
+    public TankModel GetTankModel()
+    {
+        return tankmodelRef;
+    }
+
     public void Rotate(float rotation, float rotationSpeed)
     {
         Vector3 vector = new Vector3(0f, rotation*rotationSpeed, 0f);

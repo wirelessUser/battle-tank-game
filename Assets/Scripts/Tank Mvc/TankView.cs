@@ -12,11 +12,13 @@ public class TankView : MonoBehaviour
 
     public Rigidbody tankrb;
 
-    public void Start()
+    public GameObject mainCam;
+    public void Awake()
     {
-       
-       
 
+        mainCam = GameObject.Find("Main Camera");
+        mainCam.transform.SetParent(this.gameObject.transform);
+        mainCam.transform.localPosition = new Vector3(0, 4.16f, -3.4f);
 
         
     }
@@ -24,7 +26,7 @@ public class TankView : MonoBehaviour
     {
         TankMovement();
         Debug.Log($" From TankView--- Movement :{ movement} ");
-        tankControllerRef.Move(movement, 30);
+        tankControllerRef.Move(movement, tankControllerRef.tankmodelRef.movementSpeed);
         tankControllerRef.Rotate(rotation, 40);
     }
 
