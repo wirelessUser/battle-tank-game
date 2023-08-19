@@ -16,7 +16,7 @@ public class TankView : MonoBehaviour
     public void Awake()
     {
 
-        mainCam = GameObject.Find("Main Camera");
+        //mainCam = GameObject.Find("Main Camera");
         mainCam.transform.SetParent(this.gameObject.transform);
         mainCam.transform.localPosition = new Vector3(0, 4.16f, -3.4f);
 
@@ -25,7 +25,7 @@ public class TankView : MonoBehaviour
     public void Update()
     {
         TankMovement();
-        Debug.Log($" From TankView--- Movement :{ movement} ");
+     //   Debug.Log($" From TankView--- Movement :{ movement} ");
         tankControllerRef.Move(movement, tankControllerRef.tankmodelRef.movementSpeed);
         tankControllerRef.Rotate(rotation, 40);
     }

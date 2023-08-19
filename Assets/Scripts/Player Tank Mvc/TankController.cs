@@ -16,7 +16,7 @@ public class TankController
        public TankController(TankView _tankView,TankModel _tankModel)
     {
         tankmodelRef = _tankModel;
-        //tankViewRef = _tankView;
+        tankViewRef = _tankView;
 
         tankViewRef = GameObject.Instantiate<TankView>(_tankView);
         tankRb = tankViewRef.GetRigidBody();
@@ -29,7 +29,7 @@ public class TankController
 
     public void Move(float movement, float movementSpeed)
     {
-        Debug.Log($"Movement :{ movement} , movementSpeed : {movementSpeed}");
+       // Debug.Log($"Movement :{ movement} , movementSpeed : {movementSpeed}");
         tankRb.velocity = tankViewRef.transform.forward * movementSpeed * movement;
       //  tankRb.AddForce(new Vector3(0, 0, movementSpeed*movement));
     }
