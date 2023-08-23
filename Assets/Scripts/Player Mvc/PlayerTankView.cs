@@ -11,6 +11,7 @@ public class PlayerTankView : MonoBehaviour
 
     public PlayerScriptableData dataSo;
     public CameraFollow mainCam;
+    public Rigidbody rb;
     private void Awake()
     {
         mainCam = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
@@ -19,7 +20,7 @@ public class PlayerTankView : MonoBehaviour
     private void Update()
     {
         TakeInput();
-        Debug.Log($"horizontalInput{horizontalInput}");
+       // Debug.Log($"horizontalInput{horizontalInput}");
         if (horizontalInput != 0)
         {
             tankController.Move( 30,horizontalInput);
@@ -40,7 +41,7 @@ public class PlayerTankView : MonoBehaviour
 
     public Rigidbody ReturnRb()
     {
-
-        return this.GetComponent<Rigidbody>();
+        return rb;
+       // return GetComponent<Rigidbody>();
     }
 }

@@ -19,6 +19,7 @@ public class PlayerTankController
         view.SetController(this);
         model.SetPlayerTankModel(view.dataSo);
         GameObject.Instantiate(view.gameObject);
+        view.gameObject.name = model.name;
     }
 
 

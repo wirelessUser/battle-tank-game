@@ -20,7 +20,9 @@ public class PlayerTankModel
     }
     public void SetPlayerTankModel(PlayerScriptableData data)
     {
+       
         name = data.name;
+        //Debug.Log($"name{name}");
         health = data.health;
         currentHealth = health;
         damage = data.damage;

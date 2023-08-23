@@ -125,9 +125,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6154418042008020227}
-  - component: {fileID: 6752226188300848253}
   - component: {fileID: 6752226188300848252}
   - component: {fileID: 6752226188300848254}
+  - component: {fileID: -7696802979863906250}
   m_Layer: 0
   m_Name: BigEnemy
   m_TagString: Untagged
@@ -152,22 +152,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6752226188300848253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6154418042007927011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3410574ca81b5c43b12deaf7b5c6f9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageCapacity: 40
-  firePoint: {fileID: 750340465}
-  firerate: 0
-  enemScriptableObj: {fileID: 11400000, guid: 3696772a3f444604e99eaacac0bb5d82, type: 2}
 --- !u!65 &6752226188300848252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -197,6 +181,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7696802979863906250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6154418042007927011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10edcd539a04862439dab6f0ffdd450b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6154418042007927013
 GameObject:
   m_ObjectHideFlags: 0

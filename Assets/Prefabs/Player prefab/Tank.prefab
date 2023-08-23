@@ -198,6 +198,8 @@ MonoBehaviour:
   horizontalInput: 0
   verticleInput: 0
   dataSo: {fileID: 11400000, guid: 33f106d8db38bbd4397e6df413ecdf98, type: 2}
+  mainCam: {fileID: 0}
+  rb: {fileID: -2430727540742116032}
 --- !u!1 &5170878431976608314
 GameObject:
   m_ObjectHideFlags: 0
