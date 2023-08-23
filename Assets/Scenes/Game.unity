@@ -165,39 +165,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 223121590}
-  - component: {fileID: 223121589}
   m_Layer: 0
   m_Name: Enemy_Tank_Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &223121589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223121588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e7266990a5a00448e15b420c4aa58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyDataSo:
-  - {fileID: 11400000, guid: b00bbdb9d5ef76a46a80ab5ad5149c05, type: 2}
-  - {fileID: 11400000, guid: 3696772a3f444604e99eaacac0bb5d82, type: 2}
-  spawnedLocation:
-  - {fileID: 2046574466}
-  - {fileID: 513093858}
-  - {fileID: 1236595085}
-  - {fileID: 59331479}
-  - {fileID: 991658673}
-  enemyPrefabs:
-  - {fileID: 1054212932288543489, guid: ec0be546c6be05249acb7c899ad95161, type: 3}
-  - {fileID: 6752226188300848253, guid: 79c5fa760dedefb48b7ade0ee9b2cfdb, type: 3}
-  spawnedPositionList: []
+  m_IsActive: 0
 --- !u!4 &223121590
 Transform:
   m_ObjectHideFlags: 0
@@ -253,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 915728551}
-  - component: {fileID: 915728550}
+  - component: {fileID: 915728552}
   m_Layer: 0
   m_Name: PlayerTankSpawner
   m_TagString: Untagged
@@ -261,20 +235,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &915728550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915728549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffdc5091d51df764a9543c42bc83f4f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankPrefab: {fileID: 5170878431976510762, guid: 51f9a467a8e2851468c029fda6a90fa5,
-    type: 3}
 --- !u!4 &915728551
 Transform:
   m_ObjectHideFlags: 0
@@ -290,6 +250,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &915728552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915728549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ed9da745e9b5c4f8dff61b0e694c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankView: {fileID: 1753715888, guid: 51f9a467a8e2851468c029fda6a90fa5, type: 3}
 --- !u!1 &991658672
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +576,7 @@ GameObject:
   - component: {fileID: 1391056261}
   - component: {fileID: 1391056260}
   - component: {fileID: 1391056265}
+  - component: {fileID: 1391056266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -649,7 +623,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -697,6 +671,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: d2b82a52b13b9014d988055d0b2f939e, type: 2}
+--- !u!114 &1391056266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391056259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6e39e1aada6b040a476db1512c07f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1539413733
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1539413734
 Transform:
   m_ObjectHideFlags: 0

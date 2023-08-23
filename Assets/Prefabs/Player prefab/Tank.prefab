@@ -128,9 +128,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5170878431976902616}
-  - component: {fileID: 5170878431976510762}
   - component: {fileID: 7163644544768581281}
   - component: {fileID: -2430727540742116032}
+  - component: {fileID: 1753715888}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -154,19 +154,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5170878431976510762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170878431976608312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76ff7f8e700670a4d891939e9c3b2d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankrb: {fileID: -2430727540742116032}
 --- !u!65 &7163644544768581281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -196,6 +183,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1753715888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5170878431976608312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19fc64f63ed4054f83afa56f2a8c598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  verticleInput: 0
+  dataSo: {fileID: 11400000, guid: 33f106d8db38bbd4397e6df413ecdf98, type: 2}
 --- !u!1 &5170878431976608314
 GameObject:
   m_ObjectHideFlags: 0
